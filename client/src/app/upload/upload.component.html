@@ -1,0 +1,6 @@
+<h2>Upload Image</h2>
+<div class="container">
+  <div class="row">
+    <dropzone [message]="'Click here to upload'" (error)="onUploadError($event)" (sending)="onSending($event)" (success)="onUploadSuccess($event)"></dropzone>
+  </div>
+</div>

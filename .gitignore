@@ -1,0 +1,4 @@
+/client/node_modules
+/serever/node_modules
+/server/public/uploads
+.c9/

@@ -1,0 +1,12 @@
+<h2>Your images</h2>
+<div *ngIf="this.images.length > 0" class="col-md-8 col-md-offset-2">
+  <ul>
+    <li *ngFor="let image of this.images">
+      <img src="{{image}}" />
+    </li>
+  </ul>
+</div>
+<div *ngIf="this.images.length == 0" class="col-md-8 col-md-offset-2">
+  <h2>You have no images yet</h2>
+  <p>Go <a routerLink="/upload">here</a> to upload a new one</p>
+</div>

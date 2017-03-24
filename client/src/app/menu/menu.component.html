@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="col-xs-12">
+    <ul class="nav nav-pills">
+      <li routerLinkActive="active"> <a [routerLink]="['/images']">Images</a></li>
+      <li routerLinkActive="active"> <a [routerLink]="['/upload']">Add Images</a></li>
+      <li *ngIf="this.logged_in" routerLinkActive="active"> <a [routerLink]="['/logout']">Log out</a></li>
+    </ul>
+  </div>
+</div>
